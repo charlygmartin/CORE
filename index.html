@@ -227,18 +227,12 @@
     .hero-bg {
       position: absolute;
       inset: 0;
-      background-image: url('images/dra-marisa-principal.jpg');
-      background-size: cover;
-      background-position: center top;
-      transform: scale(1.05);
+      background-color: #0a0d14;
+      background-image: url('images/hero-bg.jpg'), url('images/logo-core-capilar.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
       transition: transform 8s ease;
-    }
-    .hero-bg::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: url('https://images.unsplash.com/photo-1629909615184-74f495363b67?w=1920&q=85&auto=format&fit=crop') center/cover no-repeat;
-      z-index: -1;
     }
     .hero-bg.loaded { transform: scale(1); }
 
@@ -246,10 +240,10 @@
       position: absolute;
       inset: 0;
       background: linear-gradient(
-        105deg,
-        rgba(13,13,13,0.82) 0%,
-        rgba(13,13,13,0.65) 50%,
-        rgba(13,13,13,0.25) 100%
+        165deg,
+        rgba(10,13,20,0.15) 0%,
+        rgba(10,13,20,0.45) 55%,
+        rgba(10,13,20,0.88) 100%
       );
     }
 
